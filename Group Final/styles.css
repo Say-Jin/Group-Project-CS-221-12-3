@@ -238,14 +238,14 @@ nav li a:visited{
 
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: transparent;
 }
 
 .dropdown-content {
     padding: 0 18px;
     display: none;
-    overflow:hidden;
-    background-color: #f1f1f1;
+    overflow: hidden;
+    background-color: transparent;
     transition: 1.5s ease-in-out;
     flex-wrap: wrap;
     justify-content: start;
@@ -273,6 +273,6 @@ iframe {
 
 .spotifyButton:hover {
     cursor:pointer;
-    outline:thick, 5px #1ed760;
+    outline: thick, 5px #1ed760;
     outline-offset: 2px;
 }
