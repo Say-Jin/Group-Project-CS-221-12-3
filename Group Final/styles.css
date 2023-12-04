@@ -1,5 +1,5 @@
 body{
-    background-color:burlywood;
+    background-color: rgb(168, 168, 255);
 }
 * {
     margin: auto;
@@ -23,15 +23,21 @@ h1{
     font-family: 'Fiktion';
     text-align: center;
     font-size: 600%;
-    color: #ff3131;
-    outline: auto;
-    outline-offset: -2px;
+    color: black;
     border-radius: .5rem;
-    background-color: #f1f1f1;
 }
 
 
 h2 {
+    font-family: 'Fiktion';
+    text-align: center;
+    font-size: 500%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.cm12 {
     font-family: 'Fiktion';
     text-align: center;
     font-size: 500%;
@@ -93,11 +99,11 @@ nav {
 }
 
 .navy li a {
-    color: #ff3131;
+    color: black;
 }
 
 .navy li a:hover {
-    color: blue;
+    color: rgb(168, 168, 255);
 }
 
 nav li a:visited{
