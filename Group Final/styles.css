@@ -82,6 +82,7 @@ img{
 }
 
 nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -91,7 +92,7 @@ nav {
 
 
 .navy li{
-    display: inline-block;
+    display: inline-flex;
     gap: 3rem;
     justify-content: center;
     list-style: none;
@@ -251,6 +252,7 @@ nav {
     position:absolute;
     margin: 10px 20px;
 }
+
 .dropdown-content11 {
     padding: 0 18px;
     display: none;
@@ -375,13 +377,13 @@ iframe:hover {
 }
 
 .spotifyButton {
+    outline: auto;
     padding: 10px 20px;
     margin: 10px 20px;
     display: flex;
     position:relative;
     font-family: 'Grotesk';
     font-size: larger;
-    color:#1ed760;
     background-color: black;
     font-weight: bold;
     top:20px;
@@ -394,15 +396,13 @@ iframe:hover {
     cursor:pointer;
     outline: thick;
     outline-offset: 2px;
-    border-color: #1ed760;
     scale: 1.2;
 }
 .image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 550px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 50px;
+    padding: auto;
 }
 .image:hover{
     scale: 1.2;
