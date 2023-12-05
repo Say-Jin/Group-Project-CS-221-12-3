@@ -1,5 +1,10 @@
-body{
+html, body{
     background-color: rgb(168, 168, 255);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 * {
     margin: auto;
@@ -72,24 +77,21 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 55%;
-    width: 35%;
+    height: 50%;
+    width: 50%;
 }
 
 nav {
-    display: inline;
-    justify-content: center;
-    padding: 2rem;
-    margin: 30px, 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
 }
 
-.navy ul {
-    display: flex;
-}
 
 
 .navy li{
-    display: inline-flex;
+    display: inline-block;
     gap: 3rem;
     justify-content: center;
     list-style: none;
@@ -100,15 +102,13 @@ nav {
 
 .navy li a {
     color: black;
+    padding: 30px;
 }
 
 .navy li a:hover {
     color: rgb(168, 168, 255);
 }
 
-nav li a:visited{
-    color: none;
-}
 
 .headlogo {
     border-radius: 50%;
@@ -195,14 +195,11 @@ nav li a:visited{
 }
 .contacts-container{
     text-align: center;
-    color:#444;
-    margin-bottom: 50px;
-    display: flexbox;
-    padding: 50px;
 }
 .contacts-container a:hover{
     background-color: antiquewhite;    
 }
+
 .playlist-container h2{
     text-align: center;
     font-weight: bold;
@@ -223,6 +220,7 @@ nav li a:visited{
     display: flex;
     justify-content: center;
     border-radius: .5rem;
+    transition: scale .5s;
 }
 
 .collapsible:after {
@@ -239,40 +237,175 @@ nav li a:visited{
 
 .active, .collapsible:hover {
   background-color: transparent;
+  scale: 1.05;
 }
 
-.dropdown-content {
+.dropdown-content12 {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: transparent;
     transition: 1.5s ease-in-out;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}
+.dropdown-content11 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content10 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content9 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content8 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content7 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content6 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content5 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content4 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content3 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content2 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:absolute;
+    margin: 10px 20px;
+}.dropdown-content1 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 1.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
     position:absolute;
     margin: 10px 20px;
 }
 
 iframe {
     margin: 10px 20px;
-    position: sticky;
+    position: relative;
     top: 20px;
+    transition: scale .5s;
+}
+
+iframe:hover {
+    scale: 1.05
 }
 
 .spotifyButton {
     padding: 10px 20px;
     margin: 10px 20px;
-    justify-content: center;
     display: flex;
-    position: sticky;
-    left: 150px;
+    position:relative;
     font-family: 'Grotesk';
+    font-size: larger;
+    color:#1ed760;
     background-color: black;
     font-weight: bold;
+    top:20px;
+    justify-content: center;
+    align-items: center;
+    transition: scale .5s;
 }
 
 .spotifyButton:hover {
     cursor:pointer;
-    outline: thick, 5px #1ed760;
+    outline: thick;
     outline-offset: 2px;
+    border-color: #1ed760;
+    scale: 1.2;
 }
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 550px;
+}
+.image:hover{
+    scale: 1.2;
+}
+
+
