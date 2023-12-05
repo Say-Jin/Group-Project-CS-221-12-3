@@ -11,6 +11,7 @@
         <header>
             <img src="camelot-wheel-harmonic-mixing-traktor-pro.jpg" alt="The">
             <div>
+                <!-- basic navigation bar -->
             <nav class="navy">
                 <ul>
                     <li style="list-style-type: none;"><a style="text-decoration: none;" href="#headsec" onclick="toggleMenu()">Home</a></li>
@@ -38,14 +39,20 @@
             <div class="vibes-container">
                 <!--camelot helper site https://tunebat.com-->
                 <!--spotify embed link https://support.spotify.com/us/artists/article/embedded-players/-->
+                <!-- Notes in Camelot 12 Div are same for all divs down to Camelot 1 Div -->
                 <div class="camelot12">
                     <div class="genre">
                         <h2 class="cm12">Camelot 12</h2>
+                        <!-- container div for dropdown content zoning and styling -->
                         <div class="dropdown">
+                            <!-- toggle button for drop down content -->
                             <button type="button" class="collapsible" id="12" style="color:#ff3131">Choose a Camelot</button>
+                            <!-- default hidden dropdown content container, visible by button toggle -->
                             <div id="dropdown-content12" class="dropdown-content12">
+                                <!-- iframe Spotify API embed -->
                                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0RJD0uJykyJH6vFzz6ufaE?utm_source=generator" width="800" height="152"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen;
                                     picture-in-picture" loading="lazy"></iframe>
+                                    <!-- Song/Color/Camelot selector button -->
                                     <br><button class="spotifyButton" style="background-color: black; color:#ff3131; width:25%;">Save Song C12</button><br>
                                     <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Av4jZOAbtY8STz7KPsNDB?utm_source=generator" width="800" height="152"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen;
                                     picture-in-picture" loading="lazy"></iframe>
@@ -398,14 +405,18 @@
                 </div>
             </div>        
         </section>
+        <!-- Chosen Song counter, for total of 5 possible choices -->
         <div class="container">
             <h4>Playlist Counter:</h4>
             <h4 id="counter">5</h4>
         </div>
         <section id="playlist">
+            <!-- Resultant playlist content delivery -->
             <div class="playlist-container">
             <h3>Playlist Results</h3>
+            <!-- Resultant Color content delivery -->
             <h3 class="colorText" id="ColorText">Color:</h3>
+            <!-- Resultant Food content delivery -->
             <h3 class="foodText" id="FoodText">Food:</h3><br><br><br><br>
             <div class ="image">
             <img src="camelot-wheel-harmonic-mixing-traktor-pro.jpg" alt="The">
@@ -419,6 +430,7 @@
                 <a href="https://www.multiplechronicconditions.org/fair-use-act-disclaimer/#:~:text=**FAIR%20USE**,that%20might%20otherwise%20be%20infringing.">Copyright Information</a>
                 <button type="button" class="collapsible">Contact Us</button>
                 <div class="dropdown-content" id="dropdown-content">
+                    <!-- Contact creators section, automatic email form -->
                     <form action="mailto:drmobley12@gmail.com" method="get" enctype="text/plain">
                         <h3> Name: </h3>
                         <input type="text" name="subject" placeholder="Your Name" style="width:800px; height: 15px;"><br>

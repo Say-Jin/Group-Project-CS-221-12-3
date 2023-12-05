@@ -13,12 +13,12 @@ html, body{
 p{
     margin-bottom: 20px;
 }
-
+/* Google Font */
 @font-face {
     font-family: 'Fiktion';
     src: url(NovaSquare-Regular.ttf);
 }
-
+/* Google Font */
 @font-face {
     font-family: 'Grotesk' ;
     src: url(HankenGrotesk-VariableFont_wght.ttf);
@@ -90,7 +90,7 @@ nav {
 }
 
 
-
+/* Centering Nav line between img and AbtUs content sections */
 .navy li{
     display: inline-flex;
     gap: 3rem;
@@ -105,7 +105,7 @@ nav {
     color: black;
     padding: 30px;
 }
-
+/* Color transition for ease of use */
 .navy li a:hover {
     color: rgb(168, 168, 255);
 }
@@ -125,6 +125,7 @@ nav {
     text-align: center;
     font-weight: bold;
 }
+/* General styling and positional adjustments for Camelot headers */
 .camelot12 h2{
     text-align: center;
     font-size: 400%;
@@ -136,7 +137,6 @@ nav {
     text-align: center;
     font-size: 400%;
     color: black;
-    border: orangered;
 }
 .camelot10 h2{
     text-align: center;
@@ -188,6 +188,7 @@ nav {
     font-size: 400%;
     color: black;
 }
+/* Contact styling and positioning */
 .contacts-container h2{
     text-align: center;
     font-weight: bold;
@@ -200,13 +201,13 @@ nav {
 .contacts-container a:hover{
     background-color: antiquewhite;    
 }
-
+/* Playlist/Food/Color styling positioning */
 .playlist-container h2{
     text-align: center;
     font-weight: bold;
     font-size: 300%; font-family: 'Fiktion';
 }
-
+/* Drop down content styling default hidden, styling for button toggle, slight size transform for aesthetic */
 .collapsible {
     background-color: #444;
     cursor: pointer;
@@ -223,24 +224,23 @@ nav {
     border-radius: .5rem;
     transition: scale .5s;
 }
-
+/* adds small plus sign asset, general styling */
 .collapsible:after {
     content: '\02795';
     font-size: 13px;
     float: right;
     margin-left: 5px;
 }
-
+/* adds small minus sign asset */
 .active:after {
     content: "\2796";
 }
-
-
+/* makes dropdown toggle button transparent for easy viewing */
 .active, .collapsible:hover {
   background-color: transparent;
   scale: 1.05;
 }
-
+/* Styling for dropdown content post toggle, content edited by JS functions */
 .dropdown-content12 {
     padding: 0 18px;
     display: none;
@@ -364,18 +364,18 @@ nav {
     position:absolute;
     margin: 10px 20px;
 }
-
+/* API integration styling */
 iframe {
     margin: 10px 20px;
     position: relative;
     top: 20px;
     transition: scale .5s;
 }
-
+/* API integration animation */
 iframe:hover {
     scale: 1.05
 }
-
+/* Song selector button styling, animation, positioning */
 .spotifyButton {
     outline: auto;
     padding: 10px 20px;
@@ -391,19 +391,21 @@ iframe:hover {
     align-items: center;
     transition: scale .5s;
 }
-
+/* Song selector animation, decoration */
 .spotifyButton:hover {
     cursor:pointer;
     outline: thick;
     outline-offset: 2px;
     scale: 1.2;
 }
+/* Bottom site re-reference image for post results comparison */
 .image{
     display: flex;
     justify-content: center;
     margin: 100px 50px;
     padding: auto;
 }
+/* Image animation */
 .image:hover{
     scale: 1.2;
 }

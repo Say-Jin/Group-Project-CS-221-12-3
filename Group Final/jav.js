@@ -1,3 +1,4 @@
+// Global Declarations
 const spotifyButtons = document.querySelectorAll(".spotifyButton");
 const colorText = document.querySelector("#ColorText");
 const foodText = document.querySelector("#FoodText");
@@ -12,7 +13,8 @@ var avgCamelot;
 var addUpCamelot = 0;
 var color;
 
-
+// Add event listener for song selector buttons, subtracts one from total song allotment
+// Determine song value for result output
 spotifyButtons.forEach(button => button.addEventListener("click", () => {
     user = button.textContent;
     count -= 1;
@@ -31,6 +33,7 @@ spotifyButtons.forEach(button => button.addEventListener("click", () => {
         return;
     }
 }))
+// Function numerically quantify song choices for result output
 function convertButtonToNumber(){
     if(user == "Save Song C12"){
         return 12;    
@@ -59,6 +62,7 @@ function convertButtonToNumber(){
     }
 
 }
+// Color quantify song choice for result output
 function colorPicker(){
     if(avgCamelot < 2){
         color = "Light Violet";
@@ -98,6 +102,7 @@ function colorPicker(){
         return color;
     }
 }
+// Food selection quantifier for result output
 function foodPicker(){
     var computerChoice = Math.ceil(Math.random()*3);
     if(color = "Light Violet"){
@@ -211,10 +216,13 @@ function foodPicker(){
         }
     }
 
-
+// Collapsible button variable declaration
 var drop = document.getElementsByClassName("collapsible");
 var i;
-
+// Event listener to drop down toggle buttons
+// Toggle active attribute for content onclick
+// Toggle height on active attribute
+// Toggle display mode on active
 for (i = 0; i < drop.length; i++) {
     drop[i].addEventListener("click", function() {
     this.classList.toggle("active");
