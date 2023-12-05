@@ -222,7 +222,7 @@ for (i = 0; i < drop.length; i++) {
     if (content.style.maxHeight){
         content.style.maxHeight = null;
     } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = "none";
     }; 
     if (content.style.display === "flex") {
         content.style.display = "none", content.style.overflow = "hidden";
